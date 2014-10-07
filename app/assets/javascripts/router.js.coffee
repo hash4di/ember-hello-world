@@ -1,5 +1,6 @@
 App.Router.reopen
-  location: 'auto'
   rootURL: '/'
+  location: 'auto'
 
-App.Router.map ()->
+App.Router.map ->
+  @resource 'leads', path: '/'
